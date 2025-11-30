@@ -9,7 +9,7 @@ public class GestorTareas {
 
     public void agregarTarea(Tarea t) {
         listaTareas.add(t);
-        // No imprimimos mensaje aquí para que no moleste al cargar los datos de prueba
+        
     }
 
     public void mostrarTareas() {
