@@ -8,7 +8,7 @@ public class Tarea {
         this.id = id;
         this.titulo = titulo;
         this.descripcion = descripcion;
-        this.completada = false; // Por defecto nace pendiente
+        this.completada = false; // Por defecto aparece pendiente
     }
 
     public int getId() {
@@ -45,7 +45,7 @@ public class Tarea {
 
     @Override
     public String toString() {
-        // Usamos un operador ternario para que se vea bonito (si/no)
+        
         String estado = completada ? "[COMPLETADA]" : "[PENDIENTE] ";
         return "ID: " + id + " | " + estado + " | " + titulo + " (" + descripcion + ")";
     }
