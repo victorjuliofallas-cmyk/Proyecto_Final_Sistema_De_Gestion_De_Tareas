@@ -7,14 +7,14 @@ public class Main {
         boolean continuar = true;
 
         // --- CARGA DE DATOS INICIALES ---
-        // Cargamos 5 tareas, pero TODAS empezarán como PENDIENTES
+        // Cargue 5 tareas, pero TODAS empezarán como PENDIENTES
         gestor.agregarTarea(new Tarea(1, "Estudiar Programación", "Repasar conceptos de POO y ArrayList"));
         gestor.agregarTarea(new Tarea(2, "Renovar Pasaporte", "Sacar cita en Migración"));
         gestor.agregarTarea(new Tarea(3, "Hacer compras", "Leche, huevos y pan"));
         gestor.agregarTarea(new Tarea(4, "Taller mecánico", "Revisión de frenos"));
         gestor.agregarTarea(new Tarea(5, "Pagar internet", "Vence el viernes"));
 
-        // (Borré la línea que marcaba la tarea 3 como completada)
+        
 
         // --- ENCABEZADO DEL SISTEMA ---
         System.out.println("=========================================");
@@ -31,7 +31,7 @@ public class Main {
             System.out.print("Seleccione una opción: ");
 
             int opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            scanner.nextLine(); 
 
             switch (opcion) {
                 case 1:
